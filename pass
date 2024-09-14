@@ -1,0 +1,10 @@
+import random
+pass = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+dl = int(input("длина пароля: "))
+password = ''
+while dl > 0:
+    i = random.randint(0, len(pass))
+    password = password + pass[i]
+
+    dl -= 1
+print (password)
